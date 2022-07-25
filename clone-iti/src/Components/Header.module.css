@@ -1,0 +1,52 @@
+.header {
+  background: var(--pink);
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 5rem;
+  /* z-index: unset; */
+  position: relative;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+  margin: 0 4rem;
+}
+
+.rightSide {
+  display: flex;
+  align-items: center;
+}
+
+.header img {
+  width: 4rem;
+  height: 4rem;
+}
+
+.header p {
+  color: var(--white);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 800;
+  font-size: 1rem;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.header button {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  background: transparent;
+  border: none;
+  color: var(--white);
+}
+
+.header button svg {
+  width: 2rem; 
+  height: 2rem;
+  cursor: pointer;
+}
