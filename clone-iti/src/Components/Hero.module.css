@@ -1,0 +1,153 @@
+.hero {
+  background: var(--pink);
+  position: relative;
+  margin-top: -1px;
+}
+
+.containerHero {
+  position: relative;
+  max-width: 1216px;
+  margin: auto;
+  width: 100%;
+  padding: 0;
+}
+
+.containerContent {
+  display: flex;
+  flex-direction: row;
+  background-color: transparent;
+  padding: 0;
+  margin: 0 auto;
+  height: 596px;
+  max-width: 1216px;
+  align-items: flex-start;
+  background-image: url(../assets/hero-background.webp);
+  background-position: center;
+  background-size: cover; 
+}
+
+
+.heroText {
+  max-width: 390px;
+  padding: 102px 0 0;
+  align-self: flex-start;
+
+  position: relative;
+  z-index: 1;
+}
+
+.h1 {
+  margin-top: 0;
+  color: var(--white);
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 4rem;
+  margin-bottom: 16px;
+}
+
+.paragrafo {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  color: var(--white);
+  margin-bottom: unset;
+  max-width: 310px;
+}
+
+.containerContent img {
+  display: flex;
+  justify-content: center;
+  width: 40%;
+  -webkit-transform: translateX(-100px);
+  max-width: none;
+  height: auto;
+  margin-top: 62px;
+}
+
+.pictureMion img {
+  height: auto;
+  width: 100%;
+  display: block;
+}
+
+.hero form {
+  position: absolute;
+  width: 100%;
+  padding: 48px 40px 48px 48px;
+  top: 177px;
+  right: 10%;
+  max-width: 380px;
+  background-color: var(--white);
+  border-radius: 8px;
+  left: unset;
+  z-index: 2;
+}
+
+.fildsetForm {
+  position: relative;
+  margin-bottom: 50px;
+  padding: 0;
+  min-width: 0;
+  border: 0;
+  display: flex;
+  flex-direction: column;
+  outline: none;
+  min-height: 120px;
+}
+
+.fildsetForm input {
+  border: none;
+  padding: 0;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  height: calc(1.5em + 0.75rem + 2px);
+  order: 2;
+}
+
+.fildsetForm input::placeholder {
+  color: var(--gray-200);
+}
+
+.fildsetForm label {
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 8px;
+  color: var(--gray-500);
+  display: block;
+  order:1;
+}
+
+.divButton {
+  display: flex;
+  justify-content: space-between;
+  grid-gap: 15px;
+  gap: 15px;
+}
+
+.divButton button {
+  width: 201px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: 550;
+  border-radius: 28px;
+  border: none;
+  height: 48px;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  background-color: var(--pink);
+  color: var(--white);
+  font-family: inherit;
+}
+
+.divButton button[disabled]{
+  background-color: var(--gray-200);
+  color: var(--gray-300);
+  cursor: default;
+}
+
+.divButton button:not(:disabled) {
+  background-color: var(--gray-200);
+  color: var(--gray-300);
+  cursor: pointer;
+}

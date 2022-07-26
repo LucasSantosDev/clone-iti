@@ -4,7 +4,7 @@
   align-items: center;
   width: 100%;
   height: 5rem;
-  /* z-index: unset; */
+  z-index: unset;
   position: relative;
 }
 
@@ -14,7 +14,9 @@
   justify-content: space-between;
   align-items: center;
   z-index: 2;
-  margin: 0 4rem;
+  margin: auto;
+  padding: 0;
+  max-width: 1216px;
 }
 
 .rightSide {
@@ -51,4 +53,18 @@
   cursor: pointer;
 }
 
-@media (min-width: 768px)
+@media only screen and (max-device-width: 1200px) {
+  .rightSide {
+    margin-left: 10px;
+  }
+
+  .header p {
+    padding-left: 0;
+  }
+
+  .header button svg {
+    margin-right: 10px;
+    width: 1.5rem;
+  }
+
+}

@@ -2,12 +2,14 @@
   --gray-100: #f9f9f9;
   --gray-200: #dcdcdc;
   --gray-300: #929292;
-  --gray-400: #2b374a;
+  --gray-400: #495057;
+  --gray-500: #2b374a;
   --black: #000;
   --white: #fff;
   --pink: #fe3386;
   --red: #ff0039;
   --orange: #fd6300;
+  --blue: #106ff4;
 }
 
 * {
