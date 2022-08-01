@@ -9,88 +9,104 @@
   max-width: 1216px;
   margin: auto;
   width: 100%;
-  padding: 0;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .containerContent {
+ z-index: 1;
+ width: 100%;
+ padding-top: 20px;
+ margin: 0 auto;
+ position: relative;
+}
+
+.divBackground {
   display: flex;
-  flex-direction: row;
-  background-color: transparent;
-  padding: 0;
+  justify-content: center;
   margin: 0 auto;
-  height: 596px;
-  max-width: 1216px;
-  align-items: flex-start;
+}
+
+.background {
+  height: auto;
+  position: absolute;
+  min-width: 660px;
+  bottom: -66px;
+  max-width: 1632px;
+  z-index: 0;
+  width: 100%;
 }
 
 .heroText {
-  max-width: 390px;
-  padding: 102px 0 0;
-  align-self: flex-start;
-
+  width: 100%;
+  padding: 0;
   position: relative;
   z-index: 1;
 }
 
 .h1 {
-  margin-top: 0;
+  margin-top: 8px;
   color: var(--white);
   font-weight: 700;
-  font-size: 3rem;
-  line-height: 4rem;
-  margin-bottom: 16px;
+  font-size: 28px;
+  line-height: 36px;
+  margin-bottom: 8px;
 }
 
 .paragrafo {
-  font-size: 2rem;
-  line-height: 2.5rem;
+  font-size: 20px;
+  line-height: 24px;
   color: var(--white);
-  margin-bottom: unset;
-  max-width: 310px;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+.divMion {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 214px;
+  height: 206px;
+  position: relative;
 }
 
 .pictureMion {
-  display: flex;
-  justify-content: center;
-  width: 40%;
-  -webkit-transform: translateX(-100px);
-  max-width: none;
   height: auto;
-  margin-top: 62px;
+  width: 100%;
+  display: block;
 }
 
 .hero form {
-  position: absolute;
-  width: 100%;
-  padding: 48px 40px 48px 48px;
-  top: 177px;
-  right: 10%;
-  max-width: 380px;
+  padding: 20px 25px 52px;
+  width: 100vw;
+  left: -20px;
   background-color: var(--white);
-  border-radius: 8px;
-  left: unset;
   z-index: 2;
+  position: relative;
 }
 
 .fildsetForm {
-  position: relative;
-  margin-bottom: 50px;
-  padding: 0;
   min-width: 0;
+  position: relative;
+  padding: 0;
   border: 0;
   display: flex;
   flex-direction: column;
   outline: none;
+  margin: 0;
   min-height: 120px;
 }
 
 .fildsetForm input {
   border: none;
   padding: 0;
-  font-size: 2.5rem;
-  line-height: 3rem;
-  height: calc(1.5em + 0.75rem + 2px);
+  font-size: 40px;
+  line-height: 48px;
+  height: unset;
   order: 2;
+  position: relative;
+  width: 100%;
+
 }
 
 .fildsetForm input::placeholder {
@@ -114,124 +130,30 @@
 }
 
 .divButton button {
-  width: 201px;
+  width: 100%;
+  height: 48px;
+  position: relative;
+  font-size: 16px;
+  line-height: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-weight: 550;
+  font-weight: 800;
   border-radius: 28px;
   border: none;
-  height: 48px;
-  font-size: 1rem;
-  line-height: 1.25rem;
-  background-color: var(--pink);
   color: var(--white);
   font-family: inherit;
 }
 
-.divButton button[disabled] {
+.divButton button(:disabled), .divButton button[disabled] {
   background-color: var(--gray-200);
   color: var(--gray-300);
   cursor: default;
 }
 
 .divButton button:not(:disabled) {
-  background-color: var(--gray-200);
-  color: var(--gray-300);
+  background-color: var(--pink);
+  color: var(--white);
   cursor: pointer;
-}
-
-@media only screen and (min-width: 375px) {
-  .containerHero {
-    margin: auto;
-    width: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
-    height: 425px;
-  }
-
-  .containerContent {
-    display: flex;
-    flex-direction: column;
-    z-index: 1;
-    width: 100%;
-    padding-top: 20px;
-    margin: 0 auto;
-    position: relative;
-    height: auto;
-  }
-
-  .heroText {
-    width: 100%;
-    padding: 0;
-    position: relative;
-    z-index: 1;
-  }
-
-  .h1 {
-    margin-top: 0;
-    font-size: 1.75rem;
-    line-height: 2.25rem;
-    margin-bottom: 8px;
-  }
-
-  .paragrafo {
-    font-size: 1.25rem;
-    line-height: 1.5rem;
-    margin-bottom: 1rem;
-  }
-
-  .background {
-    position: absolute;
-    min-width: 660px;
-    width: 100%;
-    bottom: -66px;
-    max-width: 1632px;
-    z-index: 0;
-    right: -200px;
-  }
-
-  .pictureMion {
-    -webkit-transform: translateY(2px);
-    max-width: 214px;
-    width: 100%;
-    position: relative;
-    margin: 0 auto;
-  }
-
-  .hero form {
-    width: 100vw;
-    padding: 20px 25px 52px;
-    left: -20px;
-    position: relative;
-    top: 0;
-  }
-
-  .fildsetForm input {
-    height: unset;
-    position: relative;
-    margin-top: 5px;
-  }
-
-  .divButton button {
-    width: 100%;
-    position: relative;
-  }
-}
-
-@media only screen and (min-width: 1280px) {
-  .background {
-    position: absolute;
-    width: 100%;
-    bottom: -38px;
-    max-width: 1632px;
-    right: -50px;
-  }
-
-  .pictureMion {
-    width: 50%;
-    height: auto;
-    max-width: none;
-  }
 }
