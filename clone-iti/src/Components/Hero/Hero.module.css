@@ -2,6 +2,7 @@
   background: var(--pink);
   position: relative;
   margin-top: -1px;
+  overflow: hidden;
 }
 
 .containerHero {
@@ -25,16 +26,14 @@
   display: flex;
   justify-content: center;
   margin: 0 auto;
+  position: absolute;
+  height: 100%;
+  width: 35%;
+  bottom: -40px;
 }
 
 .background {
-  height: auto;
-  position: absolute;
-  min-width: 660px;
-  bottom: -66px;
-  max-width: 1632px;
-  z-index: 0;
-  width: 100%;
+  margin-left: 300px;
 }
 
 .heroText {
@@ -51,6 +50,10 @@
   font-size: 28px;
   line-height: 36px;
   margin-bottom: 8px;
+}
+
+.spanTitle {
+  display: block;
 }
 
 .paragrafo {
@@ -72,7 +75,7 @@
 
 .pictureMion {
   height: auto;
-  width: 100%;
+  width: auto;
   display: block;
 }
 
@@ -156,4 +159,10 @@
   background-color: var(--pink);
   color: var(--white);
   cursor: pointer;
+}
+
+@media screen and (max-width:767px) {
+  .spanTitle {
+    display: none;
+  }
 }
