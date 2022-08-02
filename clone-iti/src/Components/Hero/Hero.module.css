@@ -157,3 +157,42 @@
   color: var(--white);
   cursor: pointer;
 }
+
+@media only screen and (min-width: 768px) {
+  .containerContent {
+    display: flex;
+    height: unset;
+    flex-direction: row;
+    background-color: transparent;
+  }
+
+  .divBackground {
+    display: none;
+  }
+
+  .heroText {
+    width: 50%;
+    max-width: 390px;
+    padding: 0;
+    align-self: center;
+  }
+
+  .h1 {
+    font-size: 48px;
+    line-height: 64px;
+    margin-bottom: 16px;
+  }
+
+  .paragrafo {
+    max-width: 310px;
+  }
+
+  .divMion {
+    height: auto;
+    max-width: none;
+    margin: unset;
+    width: 30%;
+    right: 10%;
+    align-items: center;
+  }
+}
