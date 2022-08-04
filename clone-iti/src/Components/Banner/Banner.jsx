@@ -1,20 +1,20 @@
-import styles from "./Hero.module.css";
-import backgroundHero from "../../assets/hero-background.webp";
-import pictureMion from "../../assets/hero-mion.webp";
+import styles from "./Banner.module.css";
+import backgroundBanner from "../../assets/banner-background.webp";
+import pictureMion from "../../assets/banner-mion.webp";
 
-export function Hero() {
+export function Banner() {
   return (
-    <section className={styles.hero}>
-      <div className={styles.containerHero}>
+    <section className={styles.banner}>
+      <div className={styles.containerBanner}>
         <div className={styles.containerContent}>
           <div className={styles.divBackground}>
             <img
               className={styles.background}
-              src={backgroundHero}
-              alt="Hero background"
+              src={backgroundBanner}
+              alt="Banner background"
             />
           </div>
-          <div className={styles.heroText}>
+          <div className={styles.bannerText}>
             <h1 className={styles.h1}>o banco digital do itaú</h1>
             <p className={styles.paragrafo}>
               a conta <strong>completa</strong> onde seu dinheiro{" "}
@@ -34,14 +34,14 @@ export function Hero() {
         <form>
           <fieldset className={styles.fildsetForm}>
             <input
-              id="input-hero"
-              name="hero"
+              id="input-Banner"
+              name="Banner"
               type="text"
               inputMode="numeric"
               maxLength="14"
               placeholder="Digite seu CPF"
             />
-            <label htmlFor="input-hero">
+            <label htmlFor="input-Banner">
               Peça sua conta grátis e cartão do iti
             </label>
           </fieldset>

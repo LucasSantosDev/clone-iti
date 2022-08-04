@@ -1,10 +1,11 @@
-.hero {
+.banner {
   background: var(--pink);
   position: relative;
   margin-top: -1px;
+  overflow: hidden;
 }
 
-.containerHero {
+.containerBanner {
   position: relative;
   max-width: 1216px;
   margin: auto;
@@ -25,19 +26,17 @@
   display: flex;
   justify-content: center;
   margin: 0 auto;
+  position: absolute;
+  height: 100%;
+  width: 35%;
+  bottom: -40px;
 }
 
 .background {
-  height: auto;
-  position: absolute;
-  min-width: 660px;
-  bottom: -66px;
-  max-width: 1632px;
-  z-index: 0;
-  width: 100%;
+  margin-left: 300px;
 }
 
-.heroText {
+.bannerText {
   width: 100%;
   padding: 0;
   position: relative;
@@ -51,6 +50,10 @@
   font-size: 28px;
   line-height: 36px;
   margin-bottom: 8px;
+}
+
+.spanTitle {
+  display: block;
 }
 
 .paragrafo {
@@ -72,11 +75,11 @@
 
 .pictureMion {
   height: auto;
-  width: 100%;
+  width: auto;
   display: block;
 }
 
-.hero form {
+.banner form {
   padding: 20px 25px 52px;
   width: 100vw;
   left: -20px;
@@ -158,41 +161,8 @@
   cursor: pointer;
 }
 
-@media only screen and (min-width: 768px) {
-  .containerContent {
-    display: flex;
-    height: unset;
-    flex-direction: row;
-    background-color: transparent;
-  }
-
-  .divBackground {
+@media screen and (max-width:767px) {
+  .spanTitle {
     display: none;
-  }
-
-  .heroText {
-    width: 50%;
-    max-width: 390px;
-    padding: 0;
-    align-self: center;
-  }
-
-  .h1 {
-    font-size: 48px;
-    line-height: 64px;
-    margin-bottom: 16px;
-  }
-
-  .paragrafo {
-    max-width: 310px;
-  }
-
-  .divMion {
-    height: auto;
-    max-width: none;
-    margin: unset;
-    width: 30%;
-    right: 10%;
-    align-items: center;
   }
 }
