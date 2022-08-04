@@ -1,6 +1,6 @@
-import styles from "./Banner.module.css";
-import backgroundBanner from "../../assets/banner-background.webp";
-import pictureMion from "../../assets/banner-mion.webp";
+import styles from './Banner.module.css'
+import backgroundBanner from '../../assets/banner-background.webp'
+import pictureMion from '../../assets/banner-mion.webp'
 
 export function Banner() {
   return (
@@ -21,7 +21,7 @@ export function Banner() {
               do itaú
             </h1>
             <p className={styles.paragrafo}>
-              a conta <strong>completa</strong> onde seu dinheiro{" "}
+              a conta <strong>completa</strong> onde seu dinheiro{' '}
               <strong>rende mais que a poupança</strong>
             </p>
           </div>
@@ -57,5 +57,5 @@ export function Banner() {
         </form>
       </div>
     </section>
-  );
+  )
 }
