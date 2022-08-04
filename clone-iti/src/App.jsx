@@ -1,15 +1,14 @@
-import { Header } from "./Components/Header";
-import { Hero } from "./Components/Hero";
-import './global.css';
-
+import { Header } from "./Components/Header/Header";
+import { Hero } from "./Components/Hero/Hero";
+import "./global.css";
 
 export function App() {
   return (
-   <div>
+    <div>
       <Header />
       <main>
-      <Hero />
+        <Hero />
       </main>
-   </div>
-  )
+    </div>
+  );
 }
