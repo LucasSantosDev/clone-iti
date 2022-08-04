@@ -14,8 +14,12 @@ export function Banner() {
               alt="Banner background"
             />
           </div>
-          <div className={styles.bannerText}>
-            <h1 className={styles.h1}>o banco digital do itaú</h1>
+
+          <div className={styles.heroText}>
+            <h1 className={styles.h1}>
+              o banco digital <span className={styles.spanTitle}>grátis </span>
+              do itaú
+            </h1>
             <p className={styles.paragrafo}>
               a conta <strong>completa</strong> onde seu dinheiro{" "}
               <strong>rende mais que a poupança</strong>
@@ -23,9 +27,9 @@ export function Banner() {
           </div>
 
           <div className={styles.divMion}>
-            <img 
-              className={styles.pictureMion} 
-              src={pictureMion} 
+            <img
+              className={styles.pictureMion}
+              src={pictureMion}
               alt="image of presenter Marcus Mion showing the iti app on a cell phone"
             />
           </div>
