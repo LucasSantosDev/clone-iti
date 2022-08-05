@@ -2,7 +2,7 @@ import styles from './Banner.module.css'
 import backgroundBanner from '../../assets/banner-background.webp'
 import pictureMion from '../../assets/banner-mion.webp'
 
-export function Banner() {
+export default function Banner() {
   return (
     <section className={styles.banner}>
       <div className={styles.containerBanner}>

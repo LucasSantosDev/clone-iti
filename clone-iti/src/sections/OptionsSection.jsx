@@ -4,7 +4,7 @@ import cartaoVirtual from '../assets/cartao-virtual.webp'
 import app from '../assets/aplicativo.webp'
 import Card from '../Components/Card/Card'
 
-export function OptionsSection() {
+export default function OptionsSection() {
   return (
     <section className={styles.options}>
       <div className={styles.container}>
