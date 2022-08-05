@@ -1,11 +1,11 @@
-.hero {
+.banner {
   background: var(--pink);
   position: relative;
   margin-top: -1px;
   overflow: hidden;
 }
 
-.containerHero {
+.containerBanner {
   position: relative;
   max-width: 1216px;
   margin: auto;
@@ -36,7 +36,7 @@
   margin-left: 300px;
 }
 
-.heroText {
+.bannerText {
   width: 100%;
   padding: 0;
   position: relative;
@@ -79,7 +79,7 @@
   display: block;
 }
 
-.hero form {
+.banner form {
   padding: 20px 25px 52px;
   width: 100vw;
   left: -20px;

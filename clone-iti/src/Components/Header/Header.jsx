@@ -1,8 +1,8 @@
-import styles from "./Header.module.css";
-import itauLogo from "../../assets/itau-logo.svg";
-import { IoIosContrast } from "react-icons/io";
+import styles from './Header.module.css'
+import itauLogo from '../../assets/itau-logo.svg'
+import { IoIosContrast } from 'react-icons/io'
 
-export function Header() {
+export default function Header() {
   return (
     <header className={styles.header}>
       <div className={styles.container}>
@@ -16,5 +16,5 @@ export function Header() {
         </button>
       </div>
     </header>
-  );
+  )
 }

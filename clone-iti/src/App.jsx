@@ -1,14 +1,14 @@
-import { Header } from "./Components/Header/Header";
-import { Hero } from "./Components/Hero/Hero";
-import "./global.css";
+import Header from './Components/Header/Header'
+import Banner from './Components/Banner/Banner'
+import OptionsSection from './sections/OptionsSection'
+import './global.css'
 
 export function App() {
   return (
     <div>
       <Header />
-      <main>
-        <Hero />
-      </main>
+      <Banner />
+      <OptionsSection />
     </div>
-  );
+  )
 }
