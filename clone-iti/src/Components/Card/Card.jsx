@@ -1,6 +1,6 @@
 import styles from './Card.module.css'
 
-export function Card(props) {
+export default function Card(props) {
   return (
     <li className={styles.card}>
       <div className={styles.imageContent}>
