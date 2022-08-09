@@ -2,7 +2,6 @@
   background: var(--pink);
   position: relative;
   margin-top: -1px;
-  overflow: hidden;
 }
 
 .containerBanner {
@@ -23,17 +22,18 @@
 }
 
 .divBackground {
-  display: flex;
+  /* display: flex;
   justify-content: center;
   margin: 0 auto;
   position: absolute;
   height: 100%;
   width: 35%;
-  bottom: -40px;
+  bottom: -40px; */
+  display: none;
 }
 
 .background {
-  margin-left: 300px;
+  /* margin-left: 300px; */
 }
 
 .bannerText {
@@ -178,9 +178,15 @@
   }
 
   .divMion {
-    height: auto;
     max-width: none;
     margin: unset;
+    width: 35%;
+    align-items: center;
+    left: 50px;
+  }
+
+  .pictureMion {
+    width: 100%;
   }
 
   .heroText {
@@ -194,6 +200,10 @@
     font-size: 48px;
     line-height: 64px;
     margin-bottom: 16px;
+  }
+
+  .paragrafo {
+    max-width: 310px;
   }
 }
 
@@ -209,14 +219,20 @@
     padding: 48px 40px 48px 48px;
   }
 
-  .divBackground {
+  /* .divBackground {
     width: 100%;
-  }
+  } */
 
   .heroText {
     max-width: 390px;
-    padding: 102px 0 0 0;
+    padding: 102px 0 0;
     align-self: flex-start;
+  }
+
+  .divMion {
+    width: 50%;
+    height: auto;
+    transform: translateX(-45%);
   }
 }
 
@@ -237,18 +253,13 @@
     width: 201px;
   }
 
-  .divBackground {
+  /* .divBackground {
     width: 100%;
     height: 900px;
-  }
-
-  .background {
-    background: transparent;
-  }
+  }*/
 
   .divMion {
-    width: 100%;
-    transform: translateX(-224px);
+    transform: translateX(-20%);
   }
 
   .paragrafo {

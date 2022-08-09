@@ -134,6 +134,8 @@
 
   .optionsList {
     display: inline-flex;
+    grid-gap: 32px;
+    flex-wrap: wrap;
     gap: 32px;
     width: 100%;
     justify-content: center;
