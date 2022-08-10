@@ -2,7 +2,6 @@
   background: var(--pink);
   position: relative;
   margin-top: -1px;
-  overflow: hidden;
 }
 
 .containerBanner {
@@ -20,20 +19,6 @@
   padding-top: 20px;
   margin: 0 auto;
   position: relative;
-}
-
-.divBackground {
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
-  position: absolute;
-  height: 100%;
-  width: 35%;
-  bottom: -40px;
-}
-
-.background {
-  margin-left: 300px;
 }
 
 .bannerText {
@@ -161,8 +146,102 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   .spanTitle {
     display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .containerContent {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .background {
+    left: 80%;
+  }
+
+  .divMion {
+    max-width: none;
+    margin: unset;
+    width: 35%;
+    align-items: center;
+    left: 50px;
+  }
+
+  .pictureMion {
+    width: 100%;
+  }
+
+  .heroText {
+    width: 50%;
+    max-width: 390px;
+    padding: 0;
+    align-self: center;
+  }
+
+  .h1 {
+    font-size: 48px;
+    line-height: 64px;
+    margin-bottom: 16px;
+  }
+
+  .paragrafo {
+    max-width: 310px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .banner form {
+    width: 100%;
+    left: unset;
+    position: absolute;
+    top: 127px;
+    right: 36px;
+    max-width: 380px;
+    border-radius: 8px;
+    padding: 48px 40px 48px 48px;
+  }
+
+  .heroText {
+    max-width: 390px;
+    padding: 102px 0 0;
+    align-self: flex-start;
+  }
+
+  .divMion {
+    width: 50%;
+    height: auto;
+    transform: translateX(-45%);
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .containerBanner {
+    padding: 0;
+  }
+
+  .containerContent {
+    height: 596px;
+  }
+
+  .fildsetForm {
+    margin-bottom: 50px;
+  }
+
+  .divButton button {
+    width: 201px;
+  }
+
+  .divMion {
+    transform: translateX(-20%);
+  }
+
+  .paragrafo {
+    margin-bottom: unset;
+    font-size: 32px;
+    line-height: 40px;
+    max-width: 330px;
   }
 }

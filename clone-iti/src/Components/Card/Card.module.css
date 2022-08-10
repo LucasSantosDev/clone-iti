@@ -119,3 +119,51 @@
 .divBtn a {
   text-decoration: none;
 }
+
+@media only screen and (min-width: 768px) {
+  .options {
+    padding: 56px 0 80px;
+  }
+
+  .title {
+    text-align: center;
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 128px;
+  }
+
+  .optionsList {
+    display: inline-flex;
+    grid-gap: 32px;
+    flex-wrap: wrap;
+    gap: 32px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .card {
+    max-width: 348px;
+  }
+
+  .card:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .optionsContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200px;
+  }
+
+  .button {
+    width: 210px;
+    height: 47px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .container {
+    padding: 0;
+  }
+}
