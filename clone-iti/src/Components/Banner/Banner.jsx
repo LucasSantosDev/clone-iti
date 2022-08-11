@@ -43,11 +43,9 @@ export default function Banner() {
               type="text"
               inputMode="numeric"
               maxLength="14"
-              placeholder="Digite seu CPF"
+              placeholder="000.000.000-00"
             />
-            <label htmlFor="input-Banner">
-              Peça sua conta grátis e cartão do iti
-            </label>
+            <label htmlFor="input-Banner">Peça sua conta e cartão do iti</label>
           </fieldset>
           <div className={styles.divButton}>
             <button type="submit" className={styles.buttonForm}>
