@@ -49,6 +49,10 @@
   font-weight: 400;
 }
 
+.divBackground {
+  display: none;
+}
+
 .divMion {
   display: flex;
   justify-content: center;
@@ -158,10 +162,6 @@
     flex-direction: row;
   }
 
-  .background {
-    left: 80%;
-  }
-
   .divMion {
     max-width: none;
     margin: unset;
@@ -243,5 +243,9 @@
     font-size: 32px;
     line-height: 40px;
     max-width: 330px;
+  }
+
+  .fildsetForm input {
+    height: 80px;
   }
 }
